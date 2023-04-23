@@ -1,0 +1,37 @@
+.cookie-consent {
+  &__container {
+    align-items: baseline;
+    background: rgb(53, 53, 53);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    bottom: 0;
+  }
+
+  &__content {
+    flex: 1 0 300px;
+    margin: 15px;
+  }
+
+  &__btn-accept {
+    background: #3498db;
+    border-radius: 100px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex: 0 0 auto;
+    padding: 5px 10px;
+    margin: 15px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+  }
+}

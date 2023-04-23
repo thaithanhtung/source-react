@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import '../resources/mixins';
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  color: var(--color-black);
+  font-family: var(--font-family);
+  font-size: var(--font-size-15);
+  font-style: var(--font-style-not-italic);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-20);
+  overflow: hidden;
+
+  *:not(input) {
+    @include no-select;
+  }
+
+  #bds-hub {
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-overflow-scrolling: touch;
+
+    .bds-hub__content-wrapper {
+      height: 100%;
+      overflow: hidden;
+      width: 100%;
+      @include position-absolute-top-left;
+    }
+
+    p > img {
+      border-radius: 8px;
+      width: 100%;
+    }
+  }
+}
